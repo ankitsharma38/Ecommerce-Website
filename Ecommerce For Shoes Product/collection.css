@@ -1,0 +1,58 @@
+
+/* Hover  */
+.navbar-brand:hover {
+     transform: scale(1.1);
+}
+
+/* .shoe-card:hover {
+     transform: scale(1.1);
+} */
+.btn:hover {
+     transform: scale(1.1);
+}
+
+
+/* Start text sliding */
+.nav-item {
+     position: relative;
+}
+.nav-item::after {
+     content: '';
+     height: 3px;
+     width: 0;
+     background: #ff7b00;
+     position: absolute;
+     left: 0;
+     bottom: -5px;
+     transition: 0.5s;
+}
+
+.nav-item.active::after,
+.nav-item:hover::after {
+     width: 100%;
+}
+
+/* end sliding text */
+.shoe-card {
+     margin: 20px 0;
+}
+
+.shoe-card img {
+     max-width: 100%;
+     height: auto;
+}
+
+.shoe-card-body {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-size: 1.5em;
+     font-weight: bold;
+     margin-left: 20px;
+}
+
+.row {
+     margin-left: 10px;
+     margin-right: 10px;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Shoes Store</title>
+     <link rel="shortcut icon" type="image" href='image/Logo1.png'>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <!-- Navigation Bar Start-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <a class="navbar-brand text-light" href="#">Shoes Stride</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                         <a class="nav-link font-weight-bold text-light" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item custom-small">
+                         <a class="nav-link text-light " href="Air_Force.html">AIR-FORCE</a>
+                    </li>
+                    <li class="nav-item custom-small">
+                         <a class="nav-link text-light" href="Jordan.html">JORDAN</a>
+                    </li>
+                    <li class="nav-item custom-small">
+                         <a class="nav-link text-light" href="Puma.html">PUMA</a>
+                    </li>
+                    <li class="nav-item custom-small">
+                         <a class="nav-link text-light" href="Crater.html">CRATER</a>
+                    </li>
+                    <li class="nav-item custom-small">
+                         <a class="nav-link text-light" href="Hippie.html">HIPPIE</a>
+                    </li>
+               </ul>
+               <form class="form-inline my-2 my-lg-0 mr-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+               </form>
+               <!-- Login Button -->
+             <!-- <a href="#">  <button class="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal"
+                    data-target="#loginModal"style="margin-right: 10px;">Profile</button></a> -->
+                    <div class="profileimg">
+                        <a href="profile.html"> <img src="image/dp.png" alt="Profile Image" height="50px"></a>
+                     </div>
+
+               <!-- Login Modal -->
+                
+               <!-- Login -->
+          </div>
+     </nav>
+     <!-- Navigation Bar End -->
+     <div class="horizontal-line"></div>
+
+     <!-- SLIDER -->
+     <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+          <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+               <div class="carousel-item active">
+                    <img src="image/slide1.png" class="d-block w-100" alt="...">
+               </div>
+               <div class="carousel-item">
+                    <img src="image/slide2.png" class="d-block w-100" alt="...">
+               </div>
+               <div class="carousel-item">
+                    <img src="image/slide3.png" class="d-block w-100" alt="...">
+               </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+               data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+               data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+          </button>
+     </div>
+     <!-- Slider End -->
+     <div class="horizontal-line"></div>
+     <!-- Contact Us CODE START -->
+     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <!-- Add your contact form here -->
+                         <form>
+                              <div class="mb-3">
+                                   <label for="name" class="form-label">Name</label>
+                                   <input type="text" class="form-control" id="name" placeholder="Your Name">
+                              </div>
+                              <div class="mb-3">
+                                   <label for="email" class="form-label">Email</label>
+                                   <input type="email" class="form-control" id="email" placeholder="Your Email">
+                              </div>
+                              <div class="mb-3">
+                                   <label for="message" class="form-label">Message</label>
+                                   <textarea class="form-control" id="message" rows="5"
+                                        placeholder="Your Message"></textarea>
+                              </div>
+                         </form>
+                    </div>
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                         <a href="contactanimation.html">
+                              <button type="button" class="btn btn-primary">Send Message</button>
+                         </a>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- CONTACT US CODE END -->
+
+     <!-- GALLERY -->
+     <div class="gallery">
+          <div class="galleryItem">
+               <h1 class="galleryTitle">Be Yourself!</h1>
+               <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="" class="galleryImg">
+          </div>
+          <div class="galleryItem">
+               <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="" class="galleryImg">
+               <h1 class="galleryTitle">This is the First Day of Your New Life!!</h1>
+          </div>
+          <div class="galleryItem">
+               <h1 class="galleryTitle">Just Do it!</h1>
+               <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="" class="galleryImg">
+          </div>
+     </div>
+     <!-- GALLERY END -->
+     <div class="horizontal-line"></div>
+     <!-- NEW SEASON -->
+     <div class="newSeason">
+          <div class="nsItem">
+               <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="" class="nsImg">
+          </div>
+          <div class="nsItem">
+               <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+               <h1 class="nsTitle">New Season</h1>
+               <h1 class="nsTitle">New Collection</h1>
+               <a href="index.html">
+                    <button class="nsButton">CHOOSE YOUR STYLE</button>
+               </a>
+          </div>
+          <div class="nsItem">
+               <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="" class="nsImg">
+          </div>
+     </div>
+     <!-- NEW SEASON END  -->
+
+     <div class="horizontal-line"></div>
+     <!-- FOOTER -->
+     <footer>
+          <div class="container-fluid" id="footer1">
+               <div class="row">
+                    <div class="col-md-4">
+                         <h3 class="fMenuTitle">About Us</h3>
+                         <ul class="fList">
+
+                              <!-- <li class="fListItem"><a href="#">Contact</a></li> -->
+                              <li class="fListItem custom-small">
+                                   <a class="nav-link text-light" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#contactModal">Contact Us</a>
+                              </li>
+                              <li class="fListItem"><a href="#">Company</a></li>
+                              <li class="fListItem"><a href="#">Careers</a></li>
+                              <li class="fListItem"><a href="#">Affiliates</a></li>
+                              <li class="fListItem"><a href="#">Stores</a></li>
+                         </ul>
+                    </div>
+                    <div class="col-md-4">
+                         <h3 class="fMenuTitle">Useful Links</h3>
+                         <ul class="fList">
+                              <li class="fListItem"><a href="#">Support</a></li>
+                              <li class="fListItem"><a href="#">Refund</a></li>
+                              <li class="fListItem"><a href="#">FAQ</a></li>
+                              <li class="fListItem"><a href="#">Feedback</a></li>
+                              <li class="fListItem"><a href="#">Stories</a></li>
+                         </ul>
+                    </div>
+                    <div class="col-md-4">
+                         <h3 class="fMenuTitle">Products</h3>
+                         <ul class="fList">
+                              <li class="fListItem"><a href="Air_Force.html">Air Force</a></li>
+                              <li class="fListItem"><a href="Jordan.html">Jordan</a></li>
+                              <li class="fListItem"><a href="Puma.html">Puma</a></li>
+                              <li class="fListItem"><a href="Crater.html">Crater</a></li>
+                              <li class="fListItem"><a href="Hippie.html">Hippie</a></li>
+                         </ul>
+                    </div>
+               </div>
+               <div class="row mt-4">
+                    <div class="col-md-4">
+                         <h3 class="fMenuTitle">Subscribe to our newsletter</h3>
+                         <div class="input-group mb-3">
+                              <input type="text" class="form-control fInput" placeholder="your@email.com"
+                                   aria-label="Subscribe">
+                              <div class="input-group-append subscribe-btn-group">
+                                   <button class="btn fButton" type="button">Join!</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <h3 class="fMenuTitle">Follow Us</h3>
+                         <div class="fIcons">
+                              <a href="#"><img src="image/facebook.png" alt="Facebook"></a>
+                              <a href="#"><img src="image/twitter.png" alt="Twitter"></a>
+                              <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
+                              <a href="#"><img src="image/whatsapp.png" alt="WhatsApp"></a>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <span class="d-block text-center copyright">@ShoesStride. All rights reserved.</span>
+                    </div>
+               </div>
+          </div>
+     </footer>
+     <!-- Footer End -->
+
+     <!-- Rest of your website content goes here -->
+
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+          </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+          integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+          </script>
+</body>
+
+</html>
